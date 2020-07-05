@@ -1,0 +1,790 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+.fundoDasPaginas{
+	padding: 2em;
+	background-image: url(../img/site-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	background-attachment:fixed;
+	color: black;
+}
+/*FUNDO*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+/*BARRA DE ROLAGEM*/
+::-webkit-scrollbar-thumb {
+	  background-color: #af0000;
+}
+header{
+	clear: both;
+	width:100%;
+	height:75px;
+	top:0;
+	left:0;
+	background-color:rgb(175,0,0);
+	position:fixed;
+	box-shadow:0 0 2em black;
+	z-index: 2;
+	text-align: center;
+}
+header img{
+	padding-top:10px;
+
+}
+@media screen and (max-width: 1000px){
+	.imgFrenteLoja{
+		width: 350px;
+	}
+}
+@media screen and (max-width: 600px){
+	.imgFrenteLoja{
+		width: 95%;
+	}
+}
+
+.menu-icon{
+	position:absolute;
+	top:-9px;
+	left: 5px;
+	font-size:55px;
+	width:75px;
+	height:82px;
+	text-align:center;
+	color:#fff;
+	cursor:pointer;
+}
+#chk{
+	display:none;
+}
+.menu{
+	z-index: 3;
+	top:0;
+	height:100%;
+	background-color:rgb(175,0,0);
+	position:fixed;
+	overflow:hidden;
+	transition:all .5s;
+}
+.menu img {
+	padding-left:5.5em;
+}
+.imgPlus{
+	margin-top: -70px;
+}
+#principal{
+	width:380px;
+	left:-380px;
+}
+#serviços{
+	width:365px;
+	left:-365px;
+	background-color:rgb(170,0,0);
+}
+#contato{
+	background-color:rgb(170,0,0);
+	width:365px;
+	left: -365px;
+}
+ul{
+	top:75px;
+	list-style:none;
+}
+ul li a{
+	display:block;
+	font-size:18px;
+	padding:18px;
+	border-bottom:solid 1px #fff;
+	text-decoration:none !important;
+	color:#fff;
+	-webkit-transition:all .2s !important;
+}
+ul li span{
+	float:right;
+	padding:5px;
+}
+ul li a:hover{
+	background-color:#fff;
+	color:rgb(175,0,0);
+	-webkit-transition:all .4s!important;
+}
+.voltar{
+	margin-top:100px;
+	background-color:rgb(150,0,0);
+	border-left:solid 2px white;
+}
+.home{
+	margin-top:70px;
+}
+.bg{
+	z-index: 2;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	position:fixed;
+	background-color:rgba(0,0,0,.7);
+	display:none;
+}
+#chk:checked ~.bg{
+	display:block;
+}
+#chk:checked ~ #principal{
+	padding-top: 5em;
+	-webkit-tranSform:translateX(380px)!important;
+}
+#serviços:target,
+#contato:target{
+	-webkit-tranSform:translateX(365px)!important;
+	box-shadow:2px 2px 20px 2px rgba(0,0,0,.7);
+	padding-top: 5em;
+}
+#btn-close{
+	margin-left: 305px;
+	color: #fff;
+	margin-top:-80px;
+	font-size: 20px;
+	display:block;
+	text-decoration: none;
+	text-align: center;
+	position: fixed;
+	-webkit-transition:all .4s!important;
+	cursor: pointer;
+}
+.box-historia{
+	padding-left: 3em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	letter-spacing: 0.2em;
+	width: 75%;
+	background-color:rgb(150,0,0);
+	text-align: left;
+	color: white;
+	font-size: 35px;
+	clear: both;
+	margin-left: -2em;
+}
+.imgTarifario{
+	width: 90%;
+}
+
+.divDosPricipios{
+	width: 100%;
+	height: 350px;
+	color: black;
+	margin-bottom: 40px;
+	overflow-x: auto;
+}
+.fundo{
+	margin-left: 2%;
+	width: 95%;
+	border-radius: 20px;
+	margin-bottom: 2em;
+	padding: 1em;
+	background-image: url(../img/WALLPAPER-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+div.tab {
+	margin: 0;
+	padding: 0;
+	display: flex;
+  overflow: auto;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 25px;
+	margin: 0;
+	position: relative;
+	color: white;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+button:hover {
+	opacity: 0.8
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+	background-color:rgba(0,0,0,0.6	);
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: rgba(255,255,255,0.5	);
+	color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 35px 50px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (max-width: 1200px){
+	.imgDiferenciais{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 900px){
+	.imgDiferenciais{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 750px){
+	.imgDiferenciais{
+		width: 100%;
+	}
+}
+
+#footer{
+	border-top: solid 3px red;
+	clear: both;
+	position: relative;
+	padding: 2em;
+	line-height: 16px;
+	width: 100% auto;
+	background-image: url(../img/redfundo5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	color: white;
+}
+.mapaDoSite{
+	left: 0;
+	padding-bottom: 1em;
+}
+.mapaDoSite ul li a{
+	margin: 0;
+	color: white;
+	font-size: 14px;
+}
+.mapaDoSite ul li a:hover{
+	background-color: rgba(0,0,0,0.3)
+}
+.coluna0{
+	float: left;
+	padding-left:1em;
+}
+.coluna1{
+	float: left;
+	padding-left:8em;
+}
+.coluna2{
+	float: right;
+	padding-right: 14em;
+}
+hr{
+	background-color: gray;
+	clear: both;
+	width: 80%;
+	height: 1px;
+}
+@media screen and (max-width: 1200px){
+	#footer{
+		border-top: solid 3px red;
+		clear: both;
+		position: relative;
+		padding: 2em;
+		line-height: 16px;
+		width: 100% auto;
+		background-image: url(../img/redfundo5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment:fixed;
+		color: white;
+	}
+	.mapaDoSite{
+		left: 0;
+		padding-bottom: 1em;
+	}
+	.mapaDoSite ul li a{
+		margin: 0;
+		color: white;
+		font-size: 14px;
+	}
+	.mapaDoSite ul li a:hover{
+		background-color: rgba(0,0,0,0.3)
+	}
+	.coluna0{
+		float: left;
+		padding-left:1em;
+	}
+	.coluna1{
+		float: left;
+		padding-left:1em;
+	}
+	.coluna2{
+		float: right;
+		padding-right: 5em;
+	}
+	hr{
+		background-color: gray;
+		clear: both;
+		width: 85%;
+		height: 1px;
+	}
+}
+@media screen and (max-width: 910px){
+	#footer{
+		border-top: solid 3px red;
+		clear: both;
+		position: relative;
+		padding: 2em;
+		line-height: 16px;
+		width: 100% auto;
+		background-image: url(../img/redfundo5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment:fixed;
+		color: gray;
+	}
+	.mapaDoSite{
+		left: 0;
+		padding-bottom: 1em;
+	}
+	.mapaDoSite ul li a{
+		margin: 0;
+		color: white;
+		font-size: 14px;
+	}
+	.mapaDoSite ul li a:hover{
+		background-color: rgba(0,0,0,0.3)
+	}
+	.coluna0{
+		float: left;
+		margin-left: -2em;;
+	}
+	.coluna1{
+		float: left;
+		padding-left:0;
+	}
+	.coluna2{
+		float: right;
+		padding-right: 2em;
+	}
+	hr{
+		background-color: gray;
+		clear: both;
+		width: 90%;
+		height: 1px;
+	}
+}
+.conteudo-dicas{
+	text-align: center;
+  width:95%;
+	clear: both;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #DFDFDF;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+
+.sub-titulo{
+	text-align: left;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+#centro {
+	clear: both;
+	width:80%;
+	margin: 0 auto;
+  margin-top:50px;
+}
+
+#conteudo-aracruz{
+    width:960px;
+    height: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+#conteudo-vitoria{
+    width:960px;
+    height: 1280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+#conteudo-bh{
+    width:960px;
+    height: 1480px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+#conteudo-sp{
+    width:960px;
+    height: 1020px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+#t_aracruz {
+	width:320px;
+	float:left;
+	margin-top:15px;
+}
+
+#t_vitoria {
+	width:270px;
+	float:left;
+	margin-top:15px;
+  margin-left: 15%;
+}
+
+#t_bh {
+	width:320px;
+	float:left;
+	margin-top:35px;
+	margin-bottom:50px;
+}
+
+#t_sp {
+	width:270px;
+	float:left;
+	margin-top:35px;
+	margin-bottom:50px;
+  margin-left: 15%;
+}
+@media screen and (max-width: 1005px){
+	.conteudo-dicas{
+		text-align: center;
+	  width:90%;
+		clear: both;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  background-color: white;
+	  border: 1px solid #DFDFDF;
+	  -moz-border-radius: 20px;
+	  -khtml-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+	  border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+
+	.sub-titulo{
+		text-align: left;
+	  margin-top:40px;
+	  margin-bottom:20px;
+	}
+	#centro {
+		clear: both;
+		width:95%;
+		margin: 0 auto;
+	  margin-top:50px;
+	}
+
+	#conteudo-aracruz{
+	  width:960px;
+	  height: 1100px;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  background-color: white;
+	  border: 1px solid #DFDFDF;
+	  -moz-border-radius: 20px;
+	  -khtml-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+	  border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+	#conteudo-vitoria{
+	   width:960px;
+	   height: 1280px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	   padding-bottom: 40px;
+	}
+	#conteudo-bh{
+	   width:960px;
+	   height: 1480px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	   padding-bottom: 40px;
+	}
+	#conteudo-sp{
+	   width:960px;
+	   height: 1020px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+	#t_aracruz {
+		width:320px;
+		float:left;
+		margin-top:15px;
+	}
+	#t_vitoria {
+		width:270px;
+		float:right;
+		margin-top:15px;
+		margin-right: 1.2em;
+
+	}
+	#t_bh {
+		width:320px;
+		float:left;
+		margin-top:35px;
+	}
+
+	#t_sp {
+		width:270px;
+		float:right;
+		margin-right: 1.2em;
+	}
+}
+@media screen and (max-width: 985px){
+	.conteudo-dicas{
+		text-align: center;
+	  width:90%;
+		clear: both;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  background-color: white;
+	  border: 1px solid #DFDFDF;
+	  -moz-border-radius: 20px;
+	  -khtml-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+	  border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+
+	.sub-titulo{
+		text-align: left;
+	  margin-top:40px;
+	  margin-bottom:20px;
+	}
+	#centro {
+		clear: both;
+		width:90%;
+		margin: 0 auto;
+	  margin-top:50px;
+	}
+
+	#conteudo-aracruz{
+	  width:960px;
+	  height: 1100px;
+	  margin: 0 auto;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	  background-color: white;
+	  border: 1px solid #DFDFDF;
+	  -moz-border-radius: 20px;
+	  -khtml-border-radius: 20px;
+	  -webkit-border-radius: 20px;
+	  border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+	#conteudo-vitoria{
+	   width:960px;
+	   height: 1280px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	   padding-bottom: 40px;
+	}
+	#conteudo-bh{
+	   width:960px;
+	   height: 1480px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	   padding-bottom: 40px;
+	}
+	#conteudo-sp{
+	   width:960px;
+	   height: 1020px;
+	   margin: 0 auto;
+	   margin-top: 20px;
+	   margin-bottom: 20px;
+	   background-color: white;
+	   border: 1px solid #DFDFDF;
+	   -moz-border-radius: 20px;
+	   -khtml-border-radius: 20px;
+	   -webkit-border-radius: 20px;
+	   border-radius: 20px;
+	  padding-bottom: 40px;
+	}
+	#t_aracruz {
+		width:320px;
+		float:left;
+		margin-top:15px;
+	}
+	#t_vitoria {
+		width:270px;
+		float:right;
+		margin-top:15px;
+		margin-right: 1.2em;
+
+	}
+	#t_bh {
+		width:320px;
+		float:left;
+		margin-top:35px;
+	}
+
+	#t_sp {
+		width:270px;
+		float:right;
+		margin-right: 1.2em;
+	}
+}
+#msd a {
+	text-align: center;
+  position: fixed;
+	margin-top: 10em;
+  left: -105px;
+  transition: 0.3s;
+  padding: 13px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#msd a:hover {
+  left: 0;
+}
+#facebook{
+  top: 20px;
+  background-color:#3b5998;
+}
+#twitter{
+  top: 80px;
+  background-color: #00aced;
+}
+#t_box {
+	width:100%;
+	float:left;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding-bottom:30px;
+}
+.divisao {
+	width:100%;
+	float:left;
+	margin-top:15px;
+}
+.t_foto {
+	margin-top:15px;
+	width:40%;
+	position: relative;
+	float:left;
+}
+.t_texto {
+	padding-left:20px;
+	float:left;
+  text-align: left;
+}
+.t_texto2 {
+	margin-top:20px;
+	width:100%;
+	padding-left:10px;
+	float:left;
+
+}

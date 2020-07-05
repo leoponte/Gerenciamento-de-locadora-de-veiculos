@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<htmL lang="pt-br">
+<head>
+
+<meta charset="utf-8"/>
+<title>King</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/favicon.png">
+<link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+	body{
+	text-align: justify;
+}
+#map {
+	width: 100%;
+  height: 400px;
+
+}
+#msd a {
+  position: fixed;
+	margin-top: 10em;
+  left: -125px;
+  transition: 0.3s;
+  padding: 13px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+#msd a:hover {
+  left: 0;
+}
+#facebook{
+  top: 20px;
+  background-color:#3b5998;
+}
+#twitter{
+  top: 80px;
+  background-color: #00aced;
+}
+
+</style>
+</head>
+<body>
+
+	<header>
+		<img src="img/logo-topo.png"/>
+		<label for="chk" class="menu-icon">&#9776;</label>
+	</header>
+
+		<input type="checkbox" id="chk"/>
+
+			<div class="bg"></div>
+						<nav class="menu" id="principal">
+							<label for="chk" id="btn-close">Fechar</label>
+							<ul>
+								<img src="img/logo-topo.png"/>
+								<li><a href="index.html" class="home">HOME<i class="fa fa-home" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="tarifario.html">TARIFÁRIO<i class="fa fa-dollar" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="#serviços">SERVIÇOS<i class="fa fa-chevron-right" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="#contato">CONTATO<i class="fa fa-chevron-right" style="font-size:25px; float:right;"></i></a></li>
+							</ul>
+						</nav>
+						<nav class="menu" id="serviços">
+							<ul>
+								<img class="imgPlus" src="img/logo-topo.png"/>
+								<li><a href="#principal" CLASS="voltar">VOLTAR<i class="fa fa-chevron-left" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="dicasDeTurismo.html">DICAS DE TURISMO<i class="fa fa-newspaper-o" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="comoAlugar.html">COMO ALUGAR<i class="fa fa-question-circle" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="terceirizacao.html">TERCEIRIZAÇÃO<i class="fa fa-briefcase " style="font-size:25px; float:right;"></i></a></li>
+							</ul>
+						</nav>
+					<nav class="menu" id="contato">
+							<ul>
+								<img class="imgPlus" src="img/logo-topo.png"/>
+								<li><a href="#principal" CLASS="voltar">VOLTAR<i class="fa fa-chevron-left" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="lojas.html">LOJAS<i class="fa fa-map-marker" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="email.html">E-MAIL<i class="fa fa-envelope" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="https://www.facebook.com/kingrentacar/">FACEBOOK<i class="fa fa-facebook-official" style="font-size:25px; float:right;"></i></a></li>
+								<li><a href="https://twitter.com/kingrentacar">TWITTER<i class="fa fa-twitter" style="font-size:25px; float:right;"></i></a></li>
+							</ul>
+					</nav>
+		<div>
+				<div class="fundoDasPaginas"><br/><br/><br/><br/>
+					<div class="box-historia" >Lojas</div><br/>
+					<div class="conteudo-dicas" style="text-align:justify;">
+						<div id="centro">
+							<h1 style="color:#951c16;">Lojas</h1><br/>
+							<h3>Encontre o endereço da loja mais perto.</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -19.8554024, lng: -43.9588101};
+				var luru = {lat: -23.5238216, lng: -46.7035611};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: uluru
+        });
+				var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: luru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+				var marker = new google.maps.Marker({
+          position: luru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFFgvATCPAAHLK-ls7PvoJ5gus7rXWp1c&callback=initMap"></script>
+
+						<h4 style="color:#951c16;">Espírito Santo</h4><br/>
+						<h5>Vitória:</h5>
+						<p>
+							Av. Fernando Ferrari, 3505 – Jabour – Vitória - ES<br/>
+							Seg. a Sexta - 07:00h às 19:00h<br/>
+							Sábados - 08:00h às 17:00h<br/>
+							Domingos e feriados - 08:00h às 17:00h<br/>
+							(27) 3089-1000<br/>
+							e-mail: reserva@kingcar.com.br<br/>
+						</p><br/>
+
+						<p>
+							<h5>Balcão do Aeroporto de Vitória:</h5>
+							Av. Fernando Ferrari, s/n– Goiabeiras – Vitória - ES<br/>
+							Seg. a Sexta - 07:00h às 22:30h<br/>
+							Sábados - 08:00h às 17:00h<br/>
+							Domingos e feriados - 08:00h às 17:00h<br/>
+							(27) 3327-8895<br/>
+							e-mail: aeroreserva@kingcar.com.br<br/>
+						</p><br/>
+
+						<h5>Aracruz:</h5>
+						Rua das Avencas, 374 – Aracruz/ES<br/>
+						Seg. a Sexta 08:00h às 18:00h<br/>
+						Sábado: 08:00h às 12:00h<br/>
+						(27) 3250-1510<br/>
+						e-mail: kingacz@kingcar.com.br<br/>
+					</p><br/>
+
+						<h4 style="color:#951c16;">Minas Gerais</h4><br/>
+						<h5>Belo Horizonte: </h5>
+
+						<p>
+							<h5 >Aeroporto Pampulha (externo)</h5>
+							Av. Professor Magalhães Penido, 110 - Bairro São Luiz - BH<br/>
+							Seg. a Sexta - 8:00h às 18:00h<br/>
+							Sábado - 8:00h às 12:00h<br/>
+							(31) 3274-0230<br/>
+							e-mail: kingbh@kingcar.com.br<br/>
+						</p><br/>
+
+						<h4 style="color:#951c16;">São Paulo</h4><br/>
+						<h5>São Paulo: </h5>
+						<p>
+							Rua Faustolo, 1867 - Lapa<br/>
+							Seg. à Sexta das 9:00h às 18:00h<br/>
+							(11) 3214-6581<br/>
+							e-mail: kingsp@kingcar.com.br<br/>
+						</p><br/>
+						<p>
+
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="footer">
+			<div class="coluna0">
+				<img src="img/logo-topo.png" />
+			</div>
+
+			<div style="width:auto;">
+			<div class="mapaDoSite coluna1">
+				<h3 style="text-align:center;">Mapa do Site</h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="tarifario.html">TARIFÁRIO</a></a></li>
+					<li><a href="dicasDeTurismo.html">DICAS DE TURISMO</a></li>
+				</ul>
+				<ul>
+					<li><a href="comoAlugar.html">COMO ALUGAR</a></li>
+					<li><a href="terceirizacao.html">TERCEIRIZAÇÃO</a></li>
+					<li><a href="lojas.html">LOJAS</a></li>
+				</ul>
+			</div>
+			<div style="width:auto;float:right;">
+				<div class="mapaDoSite coluna2">
+					<h3 style="text-align:center;">Contato</h3>
+					<ul>
+						<li><a>SP: (11) 3214-6581</a></li>
+						<li><a>BH: (31) 3274-0230</a></li>
+						<li><a>Vitória: (27) 089-1000</a></li>
+					</ul>
+					<ul>
+						<li><a>Aeroporto/Vitória: (27)3327-8895</a></li>
+						<li><a>Aracruz: (27)3250-1510</a></li>
+						<li><a>Reservas: 0800 70 21 711<br/>(27)9 8119-9997</a></li>
+					</ul><br/><br/>
+				</div>
+				</div>
+			</div>
+
+			<br/><br/><br/>
+			<div align= "center"><hr/></div><br/><br/><br/>
+			<p style="text-align:center;bottom:1em;">
+				Copyright © 2017 CodeSix Technology Inc.
+			</p><br/><br/>
+			<div id="msd">
+				<a href="https://www.facebook.com/kingrentacar/" id="facebook">Facebook<i class="fa fa-facebook-official" style="font-size:25px; float:right;"></i></a>
+				<a href="https://twitter.com/kingrentacar" id="twitter">Twitter<i class="fa fa-twitter" style="font-size:25px; float:right;"></i></a>
+			</div>
+			</div>
+
+</body>
+</html>
