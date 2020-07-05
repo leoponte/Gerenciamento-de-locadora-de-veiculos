@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8B0000"
+    tools:context="com.example.marcos.tcc.TelaSobre">
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logotopo" />
+
+    <TextView
+        android:layout_marginTop="120dp"
+        android:id="@+id/textView14"
+        android:gravity="center"
+        android:textColor="#FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CodeSix Technology" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView15"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose simple. Choose Six." />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView16"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(11)3871-3192" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView17"
+        android:textColor="#FFFF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-00" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="codesixtechnology@gmail.com"
+        android:textColor="#FFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="204dp">
+
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="22dp"
+            android:text="Versão 1.0"
+            android:textColor="#FFFF" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

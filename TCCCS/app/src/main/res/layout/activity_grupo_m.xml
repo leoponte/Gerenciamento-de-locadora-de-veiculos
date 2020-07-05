@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#8B0000"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.tcc.TelaVeiculos">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logotopo" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView15"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="19dp"
+        app:srcCompat="@drawable/corolla" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFF"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/imageView8"
+        android:text="Corolla xrs
+Comprimento (mm) 4.620
+Largura (mm) 1.775
+Altura (mm) 1.475
+Capacidade do porta-malas (l) 470
+Motor 2.0" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginTop="52dp"
+        app:srcCompat="@drawable/jettao" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFF"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_alignTop="@+id/imageView15"
+        android:text="Jetta TSI
+Comprimento (mm) 4.680
+Largura (mm) 1.775
+Altura (mm) 1.475
+Capacidade do porta-malas (l) 490
+Motor 2.0 Turbo" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView15"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView15"
+        android:layout_marginTop="38dp"
+        app:srcCompat="@drawable/fusion" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_alignTop="@+id/imageView16"
+        android:text="Fusion Titanium
+Comprimento (mm) 4.710
+Largura (mm) 1.775
+Altura (mm) 1.475
+Capacidade do porta-malas (l) 490
+Motor 2.2"/>
+
+</RelativeLayout>
