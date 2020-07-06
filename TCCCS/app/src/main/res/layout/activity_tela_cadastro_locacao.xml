@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#8B0000"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.tcc.TelaCadastroLocacao">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logotopo" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edNome"
+        android:hint="Nome Completo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CPF ou CNPJ"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Telefone" />
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:id="@+id/edRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="RG"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Reservar" />
+
+
+</LinearLayout>

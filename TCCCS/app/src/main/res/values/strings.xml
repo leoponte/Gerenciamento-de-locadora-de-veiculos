@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">TCC</string>
+    <string name="usuario">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+
+    <string-array name="Local_de_Retirada">
+        <item>Vitoria - ES </item>
+        <item>Balcao do Aeroporto de Vitoria - ES </item>
+        <item>Aracruz - ES </item>
+        <item>Belo Horizonte - MG </item>
+        <item>São Paulo - SP </item>
+    </string-array>
+
+    <string-array name="Local_de_Devolucao">
+        <item>São Paulo - SP </item>
+        <item>Belo Horizonte - MG </item>
+        <item>Aracruz - ES </item>
+        <item>Balcao do Aeroporto de Vitoria - ES </item>
+        <item>Vitoria - ES </item>
+    </string-array>
+
+    <string-array name="Retirada">
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+    </string-array>
+
+    <string-array name="Devolucao">
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+    </string-array>
+</resources>

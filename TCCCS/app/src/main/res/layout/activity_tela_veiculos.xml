@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8B0000"
+    tools:context="com.example.marcos.tcc.TelaRegistrar">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#8B0000"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.tcc.TelaVeiculos">
+
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logotopo" />
+
+    <TextView
+        android:id="@+id/txtGrupoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="GRUPO C - ECONÔMICO COM AR"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:id="@+id/txtUnoSimiliar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Novo Uno 1.0 Hatch ou Similiar" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtpreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A partir de R$145,90 Diária" />
+
+    <ImageButton
+        android:id="@+id/btGrupoC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#8B0000"
+        android:gravity="center"
+        app:srcCompat="@drawable/uno" />
+
+    <TextView
+        android:id="@+id/txtGrupoF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="GRUPO F - INTERMEDIÁRIO"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:id="@+id/txtKaSimilia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Novo Ford Ka + Sedan 1.5 ou Similiar" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtpreco2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A partir de R$289,90 Diária" />
+
+    <ImageButton
+        android:id="@+id/btGrupoF"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="#8B0000"
+        android:gravity="center"
+        app:srcCompat="@drawable/fordkaa" />
+
+    <TextView
+        android:id="@+id/txtGrupoM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="GRUPO M - EXECUTIVOS"
+        android:textColor="#FFFF" />
+
+    <TextView
+        android:id="@+id/txtCorollaSimiliar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Novo Corolla + Sedan 2.0 ou Similiar" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtpreco3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A partir de R$369,90 Diária" />
+
+    <ImageButton
+        android:id="@+id/btGrupoM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B0000"
+        android:gravity="center"
+        app:srcCompat="@drawable/corolla" />
+
+
+</LinearLayout>
+</ScrollView>

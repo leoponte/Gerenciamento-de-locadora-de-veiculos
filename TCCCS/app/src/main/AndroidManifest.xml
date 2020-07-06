@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marcos.tcc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:label="King Rent a Car"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TelaSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TelaLogin" />
+        <activity android:name=".TelaInicial" />
+        <activity android:name=".TelaReserva" />
+        <activity android:name=".TelaRegistrar" />
+        <activity android:name=".TelaCadastroLocacao" />
+        <activity android:name=".TelaVeiculos" />
+        <activity android:name=".TelaMinhasReservas" />
+        <activity android:name=".grupoC" />
+        <activity android:name=".grupoF" />
+        <activity android:name=".grupoM" />
+        <activity android:name=".ConsultarCarros" />
+        <activity android:name=".TelaSobre"></activity>
+    </application>
+
+</manifest>
